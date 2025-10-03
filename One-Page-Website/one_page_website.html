@@ -9,23 +9,24 @@
 
   <!-- Navigation -->
   <nav>
-    <a href="#home">Home</a>
-    <a href="#gallery">Pictures</a>
-    <a href="#video">Video</a>
+    <a href="#home">Home</a> |
+    <a href="#gallery">Pictures</a> |
+    <a href="#video">Video</a> |
     <a href="#contact">Contact</a>
   </nav>
 
   <!-- Home Section -->
   <section id="home">
     <h1>Welcome to My Website</h1>
-    <p>This is the home section with some introductory text.</p>
+    <p>This is the home section with some introductory text about the website. You can add more content here later.</p>
   </section>
 
   <!-- Gallery Section -->
   <section id="gallery">
     <h2>My Gallery</h2>
-    <img src="images/aranjament-floral.jpg" alt="Picture 1" width="200">
-    <img src="images/aranjament-floral.jpg" alt="Picture 2" width="200">
+    <img src="https://via.placeholder.com/200" alt="Picture 1">
+    <img src="https://via.placeholder.com/200" alt="Picture 2">
+    <img src="https://via.placeholder.com/200" alt="Picture 3">
   </section>
 
   <!-- Video Section -->
@@ -33,7 +34,10 @@
     <h2>My Video</h2>
     <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-            frameborder="0" allowfullscreen></iframe>
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
   </section>
 
   <!-- Contact Section -->
@@ -41,14 +45,14 @@
     <h2>Contact Me</h2>
     <form>
       <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br><br>
-      
+      <input type="text" id="name" name="name" required><br><br>
+
       <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br><br>
-      
+      <input type="email" id="email" name="email" required><br><br>
+
       <label for="message">Message:</label><br>
-      <textarea id="message" name="message"></textarea><br><br>
-      
+      <textarea id="message" name="message" required></textarea><br><br>
+
       <button type="submit">Send</button>
     </form>
   </section>
