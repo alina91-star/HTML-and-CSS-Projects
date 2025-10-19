@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>One Page Website</title>
-  <link rel="stylesheet" href="one_page_website.css">
+  <link rel="stylesheet" href="one_page_website.css" />
 </head>
 
 <body>
-  <!-- ============ HEADER ============ -->
-  <header>
-    <h1>My One Page Website</h1>
-    <nav>
-      <a href="#gallery">Gallery</a>
-      <a href="#video">Video</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#gallery">Pictures</a> |
+    <a href="#video">Video</a> |
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- ============ GALLERY SECTION ============ -->
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to My Website!</h1>
+    <p>This is the home section with some introductory text about the website. You can add more content here later.</p>
+  </section>
+
+  <!-- Gallery Section -->
   <section id="gallery">
     <h2>My Gallery</h2>
-    <div class="gallery-container">
-      <img src="images/pic1.jpg" alt="Picture 1" class="thumbnail">
-      <img src="images/pic2.jpg" alt="Picture 2" class="thumbnail">
-      <img src="images/pic3.jpg" alt="Picture 3" class="thumbnail">
+    <div class="gallery">
+      <img src="images/pic1-small.jpg" alt="Picture 1" class="thumbnail">
+      <img src="images/pic2-small.jpg" alt="Picture 2" class="thumbnail">
+      <img src="images/pic3-small.jpg" alt="Picture 3" class="thumbnail">
     </div>
   </section>
 
-  <!-- ============ LIGHTBOX ============ -->
+  <!-- Lightbox (Modal Image Viewer) -->
   <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
+    <img class="lightbox-content" id="lightbox-img" alt="">
     <div id="caption"></div>
   </div>
 
-  <!-- ============ VIDEO SECTION ============ -->
+  <!-- Video Section -->
   <section id="video">
     <h2>My Video</h2>
     <video width="560" height="315" controls>
-      <source src="images/video.mp4" type="video/mp4">
+      <source src="video/video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </section>
 
-  <!-- ============ CONTACT SECTION ============ -->
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
     <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-      <button type="submit">Send</button>
+      <input type="submit" value="Send">
     </form>
   </section>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- Footer -->
   <footer>
-    <p>© 2025 My One Page Website | Created by Alina-Maria Barbuta</p>
+    <p>© 2025 My Website | Created by Alina-Maria Barbuta</p>
   </footer>
 
-  <!-- Link to JavaScript -->
   <script src="JS/one_page_website.js"></script>
 </body>
 </html>
